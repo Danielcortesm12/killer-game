@@ -30,7 +30,7 @@ El objetivo del juego es eliminar a todos los enemigos antes de que se agote el 
 
 1. Clona o descarga este repositorio.
 2. Abre una terminal y navega hasta la carpeta del juego.
-3. Ejecuta el juego con el comando: `python game.py`.
+3. Ejecuta el juego con el comando: `python killergame.py`.
 
 ¡Diviértete jugando!
 
