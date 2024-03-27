@@ -6,7 +6,7 @@ import time
 pygame.init()
 
 # Configuración de la pantalla
-WIDTH, HEIGHT = 1000, 800  # Cambiar tamaño de pantalla
+WIDTH, HEIGHT = 1000, 800  
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Simple Pygame Game")
 
@@ -15,7 +15,7 @@ BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 GREEN = (0, 255, 0)
 RED = (255, 0, 0)
-BLUE = (0, 0, 128)  # Cambiar el tono de azul
+BLUE = (0, 0, 128)  
 
 # Fuente para el texto
 font = pygame.font.Font(None, 36)
@@ -31,7 +31,7 @@ def draw_info_table(eliminated, time_left):
     screen.blit(info_surface, info_rect)
 
 # Jugador (triángulo)
-player_size = 30  # Cambiar tamaño del jugador
+player_size = 30  
 player_pos = [WIDTH // 2, HEIGHT // 2]
 player_speed = 5
 player_points = [
@@ -41,7 +41,7 @@ player_points = [
 ]
 
 # Enemigos (cuadrados)
-enemy_size = 20  # Cambiar tamaño de los enemigos
+enemy_size = 20  
 num_enemies = 15
 enemies = []
 for _ in range(num_enemies):
@@ -102,7 +102,7 @@ while running:
     if eliminated_enemies == num_enemies or time_left <= 0:
         running = False
 
-# Mostrar resultado final por 3 segundos
+# Mostrar resultado final por 5 segundos
 result_surface = font.render(f"Juego Terminado. Eliminados: {eliminated_enemies}", True, BLACK)
 result_rect = result_surface.get_rect(center=(WIDTH // 2, HEIGHT // 2))
 screen.blit(result_surface, result_rect)
